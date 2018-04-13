@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_footprint_to_base_link" args="0 0 0.01 0 0 0 base_footprint base_link" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera_link" args="0.06 0 0.11 -1.57 0 -1.57 base_link camera_link" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_imu_link" args="-0.032 0 0.068 0 0 0 base_link imu_link" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser_link" args="-0.032 0 0.0171 0 0 0 base_link laser_link" />
+
+</launch>
